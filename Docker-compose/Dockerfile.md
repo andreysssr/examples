@@ -2,19 +2,6 @@
  *   https://github.com/andreysssr/examples
 -->
 
-<!--
-# оформление меню
-[Заголовки](#headers)  
-[Горизонтальные линии](#hr)  
-[Выделение текста](#textSelecte)
-
-# оформление заголовков на которые ссылаются меню
-<a name="headers"><h2>Заголовки</h2></a>
-<a name="hr"><h2>Горизонтальные линии</h2></a>
-<a name="textSelecte"><h2>Выделение текста</h2></a>
--->
-
-
 # Dockerfile
 
 [формат Dockerfile](#format)  
@@ -220,7 +207,6 @@ gid          Идентификатор группы для нового кат�
 ```Dockerfile
 # syntax=docker/dockerfile:1
 FROM ubuntu
-RUN rm -f /etc/apt/apt.conf.d/docker-clean; echo 'Binary::apt::APT::Keep-Downloaded-Packages "true";' > /etc/apt/apt.conf.d/keep-cache
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
   --mount=type=cache,target=/var/lib/apt,sharing=locked \
   apt update && apt-get --no-install-recommends install -y gcc
