@@ -280,6 +280,25 @@ _Тоже курсив_
 ---
 <a name="localPictures"><h2>Вставка локальной картинки - из текущей папки</h2></a>
 
+
+
+По умолчанию Markdown использует следующий синтаксис для изображений,
+
+![Git](img/git-logo.png)
+
+```
+![alt-text](path/to/file.png "optional-title")
+```
+
+`[код] ↓`
+
+```
+![Git](img/git-logo.png) 
+```
+
+---
+Альтернативный синтаксис для изображений
+
 <p align="center">
     <img alt="Git" src="img/git-logo.png" height="190" width="455">
 </p>
